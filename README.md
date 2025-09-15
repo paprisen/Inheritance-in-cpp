@@ -83,6 +83,8 @@ class Derived3 : public Derived1{
 
 ## Program 1: Single Inheritance
 
+### Logic:
+
 This program demonstrates the concept of single inheritance in C++. The base class Vehicle contains common attributes such as speed and price. The derived class Car inherits from Vehicle and adds an additional attribute name specific. In the main() function, an object of the Car class is created, which can access both its own data members and the inherited members of Vehicle. This shows how inheritance promotes code reusability by allowing the derived class to use features of the base class while extending its functionality.
 
 ## Algorithm:
@@ -100,6 +102,8 @@ This program demonstrates the concept of single inheritance in C++. The base cla
 6. End 
 
 ## Program 2: Multiple Inheritance
+
+### Logic:
 
 This program demonstrates the concept of multiple inheritance in C++. The class Student stores student details like PRN and name, while the class Subject stores subject name and marks. The class Profile is created by inheriting publicly from both Student and Subject, and it adds an additional member div. In the main() function, an object of Profile is created, which can access members from both parent classes along with its own. This shows how multiple inheritance allows combining features of two or more classes into a single class. It highlights the advantage of code reusability and the ability to build more detailed objects using existing classes.
 
@@ -121,6 +125,8 @@ This program demonstrates the concept of multiple inheritance in C++. The class 
 
 ## Program 3: Multilevel Inheritance
 
+### Logic:
+
 This program demonstrates the concept of multilevel inheritance in C++. The base class Company contains attributes like company name and valuation along with a function sales(). The class Department is derived from Company and adds new members such as turnover, numcustom, and a function department(). Further, the class Employee is derived from Department, adding employee-specific details like name, ID, and salary. In the main() function, an object of Employee is created, which can access members from all three levels of inheritance. This shows how data and functions are passed through multiple levels of classes, promoting code reusability and hierarchy representation.
 
 ## Algorithm:
@@ -141,7 +147,30 @@ This program demonstrates the concept of multilevel inheritance in C++. The base
 
 ## Program 4: Hierarchical Inheritance
 
+### Logic:
+
+This program demonstrates is based on the concept of inheritance in object-oriented programming. A base class Shape is created with a data member color, initialized to "blue", and a member function displayColor() that prints the color. Two derived classes, Circle and Rectangle, inherit from Shape using public inheritance. Both derived classes have their own area() functions that print their respective area formulas. In the main() function, objects of Circle and Rectangle are created. Since they inherit from Shape, they can access the displayColor() method, which prints the color "blue" for both. When the area() function is called on each object, the respective overridden method in each class is executed. This demonstrates how derived classes can share common functionality from a base class while also implementing their own specific behaviors.
+
+## Algorithm:
+
+1. Start
+
+2. Define class Shape with color = "blue" and displayColor().
+
+3. Create Circle and Rectangle classes inheriting from Shape.
+
+4. Each defines its own area() method.
+
+5. In main(), create Circle and Rectangle objects.
+
+6. Call displayColor() and area() on both.
+
+7. End
+
+
 ## Program-5: Access Specifiers
+
+### Logic:
 
 This program demonstrates the use of access specifiers and protected inheritance in C++. The base class Library has members with public, private, and protected access levels. The class User inherits from Library using protected inheritance, which means that the public and protected members of Library become protected in User. In the main() function, the program tries to access private and protected members, which is not allowed outside the class, leading to access errors. This illustrates how access specifiers control visibility and accessibility of class members in inheritance, ensuring data encapsulation and security of sensitive information.
 
