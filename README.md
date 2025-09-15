@@ -83,3 +83,80 @@ class Derived3 : public Derived1{
 
 ## Program 1: Single Inheritance
 
+This program demonstrates the concept of single inheritance in C++. The base class Vehicle contains common attributes such as speed and price. The derived class Car inherits from Vehicle and adds an additional attribute name specific. In the main() function, an object of the Car class is created, which can access both its own data members and the inherited members of Vehicle. This shows how inheritance promotes code reusability by allowing the derived class to use features of the base class while extending its functionality.
+
+## Algorithm:
+
+1. Start
+
+2. Define a base class Vehicle with data members: speed and price.
+
+3. Define a derived class Car that inherits publicly from Vehicle and adds an extra data member: name.
+
+4. In the main() function: --Create an object c1 of class Car. --Assign values to speed, price, and name.
+
+5. Display the values of all data members using cout.
+
+6. End 
+
+## Program 2: Multiple Inheritance
+
+This program demonstrates the concept of multiple inheritance in C++. The class Student stores student details like PRN and name, while the class Subject stores subject name and marks. The class Profile is created by inheriting publicly from both Student and Subject, and it adds an additional member div. In the main() function, an object of Profile is created, which can access members from both parent classes along with its own. This shows how multiple inheritance allows combining features of two or more classes into a single class. It highlights the advantage of code reusability and the ability to build more detailed objects using existing classes.
+
+## Algorithm:
+
+1. Start 
+
+2. Define a base class Student with data members: prn and name.
+
+3. Define another base class Subject with data members: sub and marks.
+
+4. Define a derived class Profile that inherits publicly from both Student and Subject, and add one extra data member: div.
+
+5. In the main() function: --Create an object p1 of the Profile class. --Assign values to name, prn, div, sub, and marks.
+
+6. Display all the details using cout.
+
+7. End
+
+## Program 3: Multilevel Inheritance
+
+This program demonstrates the concept of multilevel inheritance in C++. The base class Company contains attributes like company name and valuation along with a function sales(). The class Department is derived from Company and adds new members such as turnover, numcustom, and a function department(). Further, the class Employee is derived from Department, adding employee-specific details like name, ID, and salary. In the main() function, an object of Employee is created, which can access members from all three levels of inheritance. This shows how data and functions are passed through multiple levels of classes, promoting code reusability and hierarchy representation.
+
+## Algorithm:
+
+1. Start 
+
+2. Define a base class Company with data members (cname, valuation) and a function sales().
+
+3. Define a derived class Department that inherits publicly from Company, adds new data members (turnover, numcustom), and a function department().
+
+4. Define a further derived class Employee that inherits publicly from Department and adds data members (name, id, salary).
+
+5. In the main() function: --Create an object e1 of the Employee class. --Assign values to employee and company details.
+
+6. Display all the information using cout.
+
+7. End
+
+## Program 4: Hierarchical Inheritance
+
+## Program-5: Access Specifiers
+
+This program demonstrates the use of access specifiers and protected inheritance in C++. The base class Library has members with public, private, and protected access levels. The class User inherits from Library using protected inheritance, which means that the public and protected members of Library become protected in User. In the main() function, the program tries to access private and protected members, which is not allowed outside the class, leading to access errors. This illustrates how access specifiers control visibility and accessibility of class members in inheritance, ensuring data encapsulation and security of sensitive information.
+
+## Algorithm:
+
+1. Start 
+
+2. Define a base class Github with: --A public function disp(). --A private function disp2().
+
+3. Define a derived class User that inherits protectedly from Library. 
+
+4. In the main() function: --Create an object l1 of Library and try to call disp2() (will cause an error because it is private). 
+
+5. End
+
+## Conclusion
+
+Inheritance lets classes reuse and extend features of other classes, reducing duplication and improving structure. Single inheritance creates a base-to-derived link, multiple inheritance combines features from different classes, multilevel inheritance forms a chain, and hierarchical inheritance shares one base across many classes. Access specifiers (public, private, protected) control how members are shared.
